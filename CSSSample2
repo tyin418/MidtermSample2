@@ -1,0 +1,497 @@
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+----------------------------------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+margin : 0; padding : 0; border : 0; outline : 0; font-size : 100%; vertical-align : baseline; background : transparent; }
+body { line-height : 1; }
+ol, ul { list-style : none; }
+blockquote, q { quotes : none; }
+blockquote:before, blockquote:after, q:before, q:after { content : ''; content : none; }
+:focus { outline : 0; }
+ins { text-decoration : none; }
+del { text-decoration : line-through; }
+table { border-collapse : collapse; border-spacing : 0; }
+
+
+
+/* Author styles  
+----------------------------------------------------------------------------------------- */
+
+body { font-size : 62.5%; color : #000; line-height : 1.5; }
+h1,h2,h3,h4,h5,h6 { font-weight : normal; }
+h1 { font-size : 6em; }
+h2 { font-size : 4.8em; }
+h3 { font-size : 3.6em; }
+p { font-size : 1.2em; }
+ul, ol { font-size : 1.2em; }
+ul, ol { list-style-type : none; }
+abbr, acronym { border-bottom-width : 0; }
+strong { font-weight : bold; }
+em { font-style : italic; }
+pre { margin : 0 0; white-space : pre; }
+pre { font : 1em 'andale mono', 'monotype.com', 'lucida console', monospace; } 
+.group:after { content : "."; display : block; height : 0; clear : both; visibility : hidden; }
+q:before { content : "\201C"; }
+q:after { content : "\201D"; }
+a:link, a:visited, a:hover, a:active { text-decoration : none; }
+.small-caps { font-size : 1.1em; font-variant : small-caps; letter-spacing : .1em; } 
+
+
+/* Index template
+----------------------------------------------------------------------------------------- */
+
+.index { 
+background : #574446 /* url(../siteimages/baseline-18.png) repeat */ ;
+color : #dee6d7; 
+font-family : Helvetica, Arial, sans-serif; 
+line-height : 1.6; }
+
+.index h1, .index h2 { 
+font-size : 7.9em; 
+font-weight : bold; 
+text-transform : lowercase;
+letter-spacing : -.04em; 
+line-height : 1.15; 
+text-indent : -5px; }
+
+.index #branding { 
+width : 68em; 
+margin : 0 auto;  }
+
+.index #content {
+width : 68em;  
+margin : 0 auto; 
+padding-bottom : 1.6em; 
+border-bottom : 1px solid #4b3a3c; }
+
+.index #content-sub { 
+margin-bottom : 2em; 
+padding-bottom : 1.6em; 
+border-bottom : 1px solid #4b3a3c; }
+
+.index #content-main { 
+
+margin-bottom : 1.8em; 
+padding-bottom : 1.6em; 
+border-bottom : 1px solid #4b3a3c; }
+
+.index .col-one { float : left; width : 32em; }
+.index .col-two { float : right; width : 32em; }
+
+.index #siteinfo {
+margin : 0 33em 1.5em 33em; 
+padding-top : 1.5em; }
+
+.index h3 { 
+margin-bottom : 1.4em; 
+font-size : 1.2em; 
+text-transform : uppercase; 
+letter-spacing : .8em; }
+
+.index blockquote p:first-child { 
+margin-bottom : .5em; 
+font-size : 2.4em;
+line-height : 1.2; }
+
+.index blockquote p:last-child { 
+text-align : right; }
+
+.index #content-main p { line-height : 1.5; }
+.index #content-main p + p { text-indent : 2em; }
+
+.index pre { 
+font-family : inherit; 
+line-height : inherit; }
+
+.index ol { list-style-type : decimal; }
+.index h2 + ul li { display : inline; margin-right : 4em; }
+.index a { color : #fff; }
+.index ::selection { background-color : transparent; color : #fff; }
+
+
+/* Part 1 (golden two-columns)  
+----------------------------------------------------------------------------------------- */
+
+.part-1 { 
+background : #504736 url(../siteimages/p1-texture-03.jpg) no-repeat 50% 0; 
+color : #fbf1de; 
+font-family : Helvetica, Arial, sans-serif; line-height : 1.8; }
+
+.part-1 #branding { 
+width : 940px; 
+margin : 0 auto 3em auto; 
+padding : 2.25em 0 .35em 0; 
+text-align : center; }
+
+.part-1 #content { 
+width : 940px; 
+margin : 0 auto 2.5em auto; }
+
+.part-1 #content-main { 
+margin-bottom : 4em; }
+
+.part-1 #content-sub { 
+padding-top : 4.2em;  
+border-top : 1px solid rgba(251,241,222,.2); }
+
+.part-1 #siteinfo { 
+width : 726px; 
+margin : 0 auto; 
+padding : 0 107px; 
+opacity : .5; }
+
+.part-1 .col-one { 
+float : left; 
+width : 310px; 
+margin-left : 107px; }
+
+.part-1 .col-two { 
+float : right; 
+width : 310px; 
+margin-right : 107px; }
+
+.part-1 h1 { position : relative; 
+margin-bottom : .38em; 
+padding-left : 107px; 
+font : 7.2em Georgia, "Times New Roman", Times, sans-serif; 
+text-indent : -10px;
+color : rgba(251,241,222,.2); 
+text-shadow: #000 1px 2px 2px; }
+
+.part-1 h1 abbr { 
+position : absolute; 
+top : -.12em; 
+left : 10px; 
+font-size : 150%; 
+color : #78643e; }
+
+.part-1 h1 span { 
+font-family : Palatino; font-style : italic; color : #f7e3bd; }
+
+.part-1 h2 { 
+font-size : 1.2em; 
+text-transform : uppercase; 
+letter-spacing : .8em; 
+border-bottom : 1px solid rgba(251,241,222,.2); }
+
+.part-1 h3 { 
+margin-bottom : 1.8em; 
+font-size : 1.2em; 
+text-transform : uppercase; 
+letter-spacing : .8em; }
+
+.part-1 .verse pre { 
+font-family : inherit; 
+font-size : 1.2em; 
+line-height : inherit; }
+
+.part-1 blockquote[lang="de"] pre { 
+margin : .85em 0 0 -107px; 
+font : 3.6em Georgia, "Times New Roman", Times, sans-serif; line-height : 1.15; 
+color : rgba(251,241,222,.2); }
+
+.part-1 a { color : #fbf1de; }
+
+
+/* Part 2 (fibonacci)  
+----------------------------------------------------------------------------------------- */
+
+.part-2 { 
+background : #3b2117 /* url(../siteimages/baseline-21.png) repeat */; 
+color : #75422e; 
+font-family : Georgia, "Times New Roman", Times, sans-serif; 
+line-height : 1.8; }
+
+.part-2 #branding { 
+padding : 0 2em 7em 2em; 
+background : #371F15 /* url(../siteimages/p2-noise.jpg) */; }
+
+.part-2 #content { 
+position : relative; 
+width : 100%; 
+padding-top : 4.2em; 
+border-top : 1px solid #75422e; }
+
+.part-2 #content-main { 
+float : left; 
+margin-left : 400px; 
+width : 400px; }
+
+.part-2 #content-sub { 
+position : absolute; 
+top : 48.5em; 
+left : 0; 
+width : 380px; 
+text-align : right; }
+
+.part-2 #siteinfo { 
+position : absolute; 
+top : 1em; 
+left : 400px; 
+width : 40em; }
+
+.part-2 h1 { position : absolute; 
+top : .5em; 
+left : 0; 
+width : 320px; 
+margin : 0 20px; 
+padding : 20px; 
+font-size : 7.2em; 
+text-align : center; 
+line-height : 1; 
+background : #371f15 /* url(../siteimages/p2-noise.jpg) */; 
+border : 1px solid #75422e; }
+
+.part-2 h1 abbr { 
+display : block; 
+font : 2.6em Georgia, "Times New Roman", Times, sans-serif; 
+line-height : .75; }
+
+.part-2 h2 { 
+width : 380px; 
+padding-top : 1em; 
+font-size : 1.2em; 
+text-transform : uppercase; 
+letter-spacing : .8em; }
+
+.part-2 h3 { 
+margin-bottom : 1.8em; 
+font-size : 1.2em; 
+text-transform : uppercase; 
+letter-spacing : .8em; }
+
+.part-2 ol + h3 { 
+margin-top : 1.8em; }
+
+.part-2 .verse pre { 
+font-family : inherit; 
+font-size : 1.4em; 
+line-height : 1.5; }
+
+.part-2 .verse blockquote { margin-bottom : 1.5em; }
+.part-2 .verse .small-caps { color : #af6244; } 
+.part-2 a { color : #af6244; }
+
+
+/* Part 3 (newspaper columns)  
+----------------------------------------------------------------------------------------- */
+
+.part-3 { background : #fffdf9 url(../siteimages/baseline-18.png) repeat; 
+color : #0D0B07; 
+font-family : Georgia, "Times New Roman", Times, sans-serif; 
+line-height : 1.8; }
+
+.part-3 #branding { 
+width : 1060px; 
+margin : 0 auto 1.5em auto; 
+padding : 2.25em 0 .35em 0; 
+text-align : center; }
+
+.part-3 #content { 
+width : 1060px; 
+margin : 0 auto }
+
+.part-3 #content-main { margin-bottom : 2.5em; }
+
+.part-3 #content-sub { 
+padding-top : 1.8em; 
+border-top : 1px solid #0D0B07; }
+
+.part-3 h1 { 
+margin-bottom : .42em; 
+font-size : 9.6em; 
+font-weight : bold; 
+text-align : justify; 
+/* letter-spacing : -.04em; */
+line-height : .7; }
+
+.part-3 h2 { 
+font : 1.2em Helvetica, Arial, sans-serif; 
+text-transform : uppercase; 
+letter-spacing : .8em; 
+border-bottom : 1px solid #0D0B07; }
+
+.part-3 h3 { 
+float : left; 
+margin : 0 40px .57em 0; 
+font-size : 9.6em; 
+font-weight : bold; 
+text-align : justify; 
+/* letter-spacing : -.04em; */
+line-height : .75; }
+
+.part-3 .verse blockquote { 
+float : left; 
+width : 340px; 
+margin-right : 20px; }
+
+.part-3 .verse blockquote:last-child { margin-right : 0; }
+
+.part-3 .verse pre { 
+font-family : inherit; 
+font-size : 1.1em; 
+font-style : italic; 
+line-height : 1.6; 
+white-space : pre;
+white-space : normal; }
+
+.part-3 li { line-height : 1.5; }
+
+.part-3 a { color : #DE7C56; }
+.part-3 #siteinfo { text-align : center; }
+
+
+/* Part 4 (elastic)  
+----------------------------------------------------------------------------------------- */
+
+.part-4 { 
+background : #fffdf9 url(../siteimages/p4-texture-01.jpg) no-repeat 50% 0; 
+color : #3b2117; 
+font-family : Helvetica, Arial, sans-serif;  }
+
+.part-4 #branding { 
+margin : 0 auto 3.5em auto; 
+padding : 2.25em 0 .35em 0; 
+width : 58em; 
+border-bottom : 18px solid #3b2117; 
+text-align : center;  }
+
+.part-4 #content { 
+width : 58em; 
+margin : 0 auto 2em auto; }
+
+.part-4 #content-main { 
+margin-bottom : 2.9em; }
+
+.part-4 #content-sub { 
+padding-top : 4.5em; 
+border-top : 18px solid #3b2117; }
+
+.part-4 #siteinfo { 
+width : 58em; 
+margin : 0 auto; }
+
+.part-4 .col-one { 
+float : left; 
+width : 29em; }
+
+.part-4 .col-two { 
+float : right; 
+width : 29em; }
+
+.part-4 h1 { 
+margin-bottom : .38em; 
+font-size : 9.6em; 
+font-weight : bold; 
+text-transform : lowercase; 
+text-align : justify; 
+text-indent : -10px;
+letter-spacing : -.09em; 
+line-height : .8; }
+
+.part-4 h1 abbr { 
+position : absolute; 
+top : .15em; 
+left : .15em; 
+padding : .25em; 
+background-color : #3b2117; 
+color : #fffdf9; 
+text-align : center; }
+
+.part-4 h1 abbr:hover { background-color : #de7c56; }
+
+.part-4 h2 { 
+font-size : 1.2em; 
+text-transform : uppercase; 
+letter-spacing : .8em; }
+
+.part-4 h3 { 
+margin-bottom : 1.8em; 
+font-size : 1.2em; 
+text-transform : uppercase; 
+letter-spacing : .8em; }
+
+.part-4 .verse pre { 
+font-family : inherit; 
+font-size : 2.1em; 
+line-height : 1.52; }
+
+.part-4 ul, .part-4 ol { list-style-type : none; }
+.part-4 li { line-height : 1.85; }
+.part-4 a { color : #de7c56; }
+
+.part-4 #siteinfo p { 
+font-size : 1em; 
+line-height : 2; 
+text-transform : uppercase; 
+letter-spacing : .1em; }
+
+
+/* Part 5 (building )  
+----------------------------------------------------------------------------------------- */
+
+.part-5 { 
+background : #e2bd74 url(../siteimages/p5-texture.jpg) repeat; 
+color : #3b2117;
+font-family : Helvetica, Arial, sans-serif;  }
+
+.part-5 #branding { 
+width : 1060px; 
+margin : 0 auto 1.5em auto; 
+padding : 2.25em 0 .35em 0; 
+text-align : center; }
+
+.part-5 #content { 
+width : 940px; 
+margin : 0 auto 3.5em auto; }
+
+.part-5 #content-main { 
+float : right; 
+width : 620px; }
+
+.part-5 #content-sub { 
+float : left; 
+width : 300px; }
+
+.part-5 h1 { 
+margin-bottom : .34em; 
+font-family : Georgia, "Times New Roman", Times, sans-serif; 
+line-height : 1; 
+text-indent : -5px; }
+
+.part-5 h1 abbr { 
+position : fixed; 
+bottom : 0; 
+left : 0; 
+font-size : 9.6em; 
+line-height : .5; 
+color : rgba(59,33,23,.1); }
+
+.part-5 h2 { 
+padding-bottom : 1.4em;
+font : 1.2em Helvetica, Arial, sans-serif; 
+text-transform : uppercase; 
+letter-spacing : .8em; 
+border-bottom : 3px double #3b2117; } 
+
+.part-5 h3 { font-family : Georgia, "Times New Roman", Times, sans-serif; }
+
+.part-5 ol + h3 { 
+margin-top : 1.4em;
+border-top : 3px double #3b2117; }
+
+.part-5 .verse pre { 
+font-family : inherit; 
+font-size : 2.4em; 
+line-height : 1.5; }
+
+.part-5 a { color : #3b2117; }
+
+.part-5 #siteinfo { 
+width : 620px; 
+margin : 0 auto; 
+padding-left : 320px; }
